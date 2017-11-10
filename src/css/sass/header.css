@@ -28,7 +28,7 @@
 
 #top2 { height: 90px; }
 
-#top2 .container { width: 1200px; margin: 0 auto; overflow: hidden; position: relative; }
+#top2 .container { width: 1200px; margin: 0 auto; min-height: 45px; position: relative; }
 
 #top2 .container .t1 { float: left; background: url("../../img/sp.fw.png") 0 0; width: 231px; height: 90px; margin-top: -1px; }
 
@@ -46,12 +46,22 @@
 
 #top2 .container .t3 { position: absolute; right: 0; top: 20px; width: 343px; height: 90px; }
 
-#top2 .container .t3 .t3l { float: left; background: url("../../img/sp.fw.png") -239px 0; width: 72px; height: 73px; }
+#top2 .container .t3 .t3l { float: left; background: url("../../img/sp.fw.png") -239px 0; width: 72px; height: 73px; position: absolute; z-index: -10; }
 
 #top2 .container .t3 .t3r { float: right; width: 200px; border-radius: 25px; height: 45px; border: 1px solid #ccc; background: #F5F5F5; }
 
-#top2 .container .t3 .t3r .ro { border-radius: 50%; height: 43px; width: 43px; background: #FEFEFE; float: left; line-height: 45px; font-size: 25px; color: red; padding-left: 8px; }
+#top2 .container .t3 .t3r .ro { border-radius: 50%; height: 43px; width: 43px; background: #FEFEFE; float: left; line-height: 45px; font-size: 25px; color: red; padding-left: 8px; border: 2px solid #ccc; }
 
 #top2 .container .t3 .t3r p { display: block; width: 150px; margin: 0 auto; height: 45px; line-height: 40px; text-align: center; }
 
 #top2 .container .t3 .t3r p span { color: red; padding: 0 5px; }
+
+#top2 .container .t3 .t3r:hover { border-radius: 25px 0px 0px 25px; background-color: #FFF; border-bottom: 2px solid #fff; }
+
+#top2 .container .t3 .t3r:hover .ro { background: #F5F5F5; }
+
+#top2 .container .t3 .t3r:hover #car { display: block; }
+
+#top2 .container .t3 .t3r #car { width: 292px; height: 55px; background-color: #FFF; position: absolute; left: 51px; bottom: -9px; border: 1px solid #ccc; z-index: -1; display: none; }
+
+#top2 .container .t3 .t3r #car p { line-height: 55px; font-size: 12px; width: 290px; }
