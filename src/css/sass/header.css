@@ -1,0 +1,57 @@
+#top { padding-top: 5px; box-size: border-box; height: 31px; background-color: #FBFBFB; border-bottom: 2px solid #ccc; box-shadow: 0px 0px 5px #ddd; }
+
+#top .container { width: 1200px; margin: 0 auto; }
+
+#top .container .tl { float: left; }
+
+#top .container .tr { float: right; }
+
+#top .container .tr li { float: left; }
+
+#top .container .tr li:first-child span, #top .container .tr li:nth-child(2) span { border-right: 1px solid #ccc; }
+
+#top .container .tr li:first-child { position: relative; }
+
+#top .container .tr li:first-child span { padding-right: 25px; }
+
+#top .container .tr li:first-child span i { position: absolute; right: 5px; top: 3px; }
+
+#top .container .tr li:first-child ul { position: absolute; width: 100px; left: 20px; top: 30px; display: none; }
+
+#top .container .tr li:first-child ul li:hover { color: red; text-decoration: underline; }
+
+#top .container .tr li:last-child span { color: red; padding-left: 15px; margin-left: 5px; }
+
+#top .container .tr li:last-child i { position: absolute; left: -13px; top: 0px; font-size: 20px; color: #ccc; }
+
+#top .container .tr li span { position: relative; padding: 0 15px 0 10px; height: 30px; }
+
+#top2 { height: 90px; }
+
+#top2 .container { width: 1200px; margin: 0 auto; overflow: hidden; position: relative; }
+
+#top2 .container .t1 { float: left; background: url("../../img/sp.fw.png") 0 0; width: 231px; height: 90px; margin-top: -1px; }
+
+#top2 .container .t2 { width: 432px; float: left; margin-left: 60px; }
+
+#top2 .container .t2 #search { padding-top: 20px; overflow: hidden; }
+
+#top2 .container .t2 #search input { width: 360px; height: 35px; float: left; border: 2px solid #02A3F0; }
+
+#top2 .container .t2 #search button { width: 70px; height: 35px; float: left; border: 2px solid #02A3F0; color: #fff; background-color: #02A3F0; }
+
+#top2 .container .t2 #sug { font-size: 13px; margin-top: 5px; }
+
+#top2 .container .t2 #sug span:nth-child(1), #top2 .container .t2 #sug span:nth-child(4) { color: red; }
+
+#top2 .container .t3 { position: absolute; right: 0; top: 20px; width: 343px; height: 90px; }
+
+#top2 .container .t3 .t3l { float: left; background: url("../../img/sp.fw.png") -239px 0; width: 72px; height: 73px; }
+
+#top2 .container .t3 .t3r { float: right; width: 200px; border-radius: 25px; height: 45px; border: 1px solid #ccc; background: #F5F5F5; }
+
+#top2 .container .t3 .t3r .ro { border-radius: 50%; height: 43px; width: 43px; background: #FEFEFE; float: left; line-height: 45px; font-size: 25px; color: red; padding-left: 8px; }
+
+#top2 .container .t3 .t3r p { display: block; width: 150px; margin: 0 auto; height: 45px; line-height: 40px; text-align: center; }
+
+#top2 .container .t3 .t3r p span { color: red; padding: 0 5px; }

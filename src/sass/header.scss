@@ -1,0 +1,133 @@
+    
+
+    #top{
+             padding-top: 5px;
+            box-size:border-box;
+            height: 31px;
+            background-color:#FBFBFB;
+            border-bottom:2px solid #ccc;
+            box-shadow: 0px 0px 5px #ddd;
+            .container{
+                    width: 1200px;margin: 0 auto;
+                    .tl{
+                        float: left;
+                     }
+                    .tr{
+                        float: right;
+                        li{
+                            float: left;
+
+                            &:first-child,&:nth-child(2){
+                                    span{
+
+                                        border-right:1px solid #ccc;
+                                    }
+                                }
+                            &:first-child{
+                               
+                                position: relative;
+                                span{padding-right: 25px;
+                                    i{
+                                        position:absolute;
+                                        right: 5px;top: 3px;
+                                    }
+                                }
+                                ul{
+                                    position:absolute;
+                                    width: 100px;
+                                    left:20px;top:30px;
+                                    display:none;
+                                    li:hover{
+                                        color:red;
+                                        text-decoration:underline;
+                                    }
+                                }
+                            }
+                            &:last-child{
+                                
+                                span{
+                                    color:red;
+                                    padding-left: 15px;
+                                    margin-left: 5px;
+                                }
+                                i{
+                                    position:absolute;
+                                    left: -13px;top: 0px;
+                                    font-size: 20px;color:#ccc;
+                                }
+                            }
+                            span{
+                                position:relative;
+                                padding:0 15px 0 10px;
+                                height: 30px;
+                                
+                            }
+                        }
+                    }
+            }
+    }
+    #top2{
+        height: 90px;
+        .container{
+            width: 1200px;margin: 0 auto;overflow:hidden;
+            position:relative;
+            .t1{
+                float: left;
+                background: url('../../img/sp.fw.png') 0 0;
+                width: 231px;height: 90px;margin-top: -1px;
+            }
+            .t2{
+                width: 432px;float: left;margin-left: 60px;
+                
+                #search{
+                    padding-top: 20px;
+                    overflow:hidden;
+                    input{
+                        width: 360px;height: 35px;float: left;
+                        border:2px solid #02A3F0;
+                        
+                    }
+                    button{
+                        width: 70px;height: 35px;float: left; border:2px solid #02A3F0;color:#fff;background-color: #02A3F0;
+                        
+                    }
+                    
+                }
+                #sug{ 
+                      font-size: 13px;
+                      margin-top: 5px;
+                      span{
+                        &:nth-child(1),&:nth-child(4){
+                            color:red;
+                        }
+                        
+                      }
+                    }
+            }
+            .t3{
+                position:absolute;right: 0;top: 20px;width: 343px;height: 90px;
+                .t3l{
+                    float: left;
+                    background: url('../../img/sp.fw.png') -239px 0;
+                    width: 72px;height: 73px;
+                }
+                .t3r{
+                    float: right;
+                    width: 200px;
+                    border-radius:25px;
+                    height: 45px;
+                    border:1px solid #ccc;
+                    background:#F5F5F5;
+                    .ro{
+                        border-radius:50%;height: 43px;width: 43px;background:#FEFEFE;float: left;line-height: 45px;font-size: 25px;color:red;padding-left: 8px;
+                    }
+                    p{
+                        display:block;width: 150px;margin: 0 auto;height: 45px;line-height: 40px;text-align: center;
+                        span{
+                            color:red;padding: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
