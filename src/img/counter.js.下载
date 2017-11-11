@@ -1,0 +1,65 @@
+﻿//计数器类
+
+var ClsCounter = function() {
+		
+	var guest_cookie = getCookie("guest");
+	if (!guest_cookie) return;
+		
+	var guest_id = getGuestId(guest_cookie);
+	if (!guest_id) return;
+
+	var url = "/counter.asp?guestid=" + guest_id;
+	var xhr;
+	
+	if (window.XMLHttpRequest) {
+		xhr = new XMLHttpRequest();
+		xhr.open ("get", url, true);
+		xhr.send(null);
+	} 
+	else if (window.ActiveXObject) {
+		xhr = new ActiveXObject("Microsoft.XMLHTTP");
+		xhr.open ("get", url, true);
+		xhr.send();
+	}
+	
+	try{
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4) {
+				if (xhr.status == 200) {
+				    //alert(xhr.responseText)
+				}
+			}
+		}
+	}
+	catch(e) { }
+	
+	//读取cookie
+    function getCookie(key_name){
+        var cookie_str = document.cookie;
+        if (cookie_str.length == 0) return;
+             
+　　　　var start_num = document.cookie.indexOf(key_name + "=");
+　　　　if (start_num == -1) return;
+　　　　
+　　　　start_num = start_num + key_name.length + 1;
+　　　　var end_num = document.cookie.indexOf(";", start_num);
+　　　　if (end_num == -1) end_num = document.cookie.length;
+　　　　
+　　　　return unescape(cookie_str.substring(start_num, end_num));
+　　}　
+    
+    //读取guest cookie
+    function getGuestId(guest_cookie) {
+        var arr_cookie = guest_cookie.split("&");
+        var arr_sub, key_name, key_value;
+        for (var i = 0; i < arr_cookie.length; i++) {
+            arr_sub = arr_cookie[i].split("=");
+            key_name  = arr_sub[0];
+            key_value = arr_sub[1];
+            if (key_name.toLowerCase() == "id") {
+                return key_value;
+            }
+        }
+    }
+};
+var objCounter = new ClsCounter();

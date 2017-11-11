@@ -1,0 +1,155 @@
+﻿objProc = new ClsPageProcedure();
+
+$(window).scroll(function() {
+    objBase.LoadImages($("img"));
+    if (objBase.DocScrollTop() > 300) {
+        $("#fs-toolbar1 .top")[0].style.visibility = "visible";
+    }
+    else {
+        $("#fs-toolbar1 .top")[0].style.visibility = "hidden";
+    }
+});
+
+function ClsPageProcedure() {
+    var _t = this;
+    var lyrs, ctrs;
+
+    lyrs = document.layers = {
+        searchHelper: $("#search-helper")[0]
+    };
+    ctrs = _t.Controls = {
+        searchText: $("#search")[0],
+        searchBtn: $("#search-btn")[0]
+    };
+
+    $(document).mousedown(function(e) {
+        var elem_evt = objBase.GetEventObj(e);
+        objBase.ClearLayers(elem_evt);
+    });
+    
+    $(".head-info").click(function(e) {
+        var elem_evt = objBase.GetEventObj(e, true);
+        if (elem_evt.innerHTML == "收藏本站")
+            addFavorite("http://www.no5.com.cn", "No5");
+    });
+
+    var elem_box = $(".headbox")[0];
+
+    elem_box.onclick = function(e) {
+        var elem_evt = objBase.GetEventObj(e, true);        
+        if (elem_evt == ctrs.searchBtn)
+            goSearch();
+        else if (elem_evt.getAttribute("search-key")) {
+            keywordClicked(elem_evt.getAttribute("search-key"));
+        }
+        else if (elem_evt.parentNode.getAttribute("search-key")) {
+            keywordClicked(elem_evt.parentNode.getAttribute("search-key"));
+        }
+        else if (elem_evt.className == "del-keywords") {
+            ctrs.searchText.value = "";
+            ctrs.searchText.focus();
+        }
+    };
+
+    elem_box.onkeyup = function(e) {
+        var elem_evt = objBase.GetEventObj(e, true);
+        var evt = e || window.event;
+        var keycode = evt.keyCode
+        if (elem_evt == ctrs.searchText) {
+            if (keycode == 38)
+                hoverSHItem(-1);
+            else if (keycode == 40)
+                hoverSHItem(1);
+            else
+                popupSearchHelper(elem_evt);
+        }        
+    };
+
+    elem_box.onkeydown = function(e) {
+        var evt = e || window.event;
+        var elem_evt = objBase.GetEventObj(e, true);
+        if (elem_evt.id == "search" && evt.keyCode == 13 ) {
+            document.location.href = "/search?keyword=" + encodeURIComponent(elem_evt.value);
+        }    
+    };
+
+    ctrs.searchText.onfocus = function() {
+        if (this.value == this.getAttribute("old-data"))
+            this.value = "";
+        else 
+            popupSearchHelper(ctrs.searchText);
+    };
+
+    ctrs.searchText.onblur = function() {
+        if (this.value.length == 0)
+            this.value = this.getAttribute("old-data"); 
+    };
+
+    var addFavorite = function(url_, title_) {
+        try {
+            window.external.addFavorite(url_, title_);
+        } catch (e) {
+            try {
+                window.sidebar.addPanel(title_, url_, "");
+            } catch (e) {
+                alert("抱歉，您的浏览器不支持自动收藏操作!\n\n请您使用菜单栏或Ctrl+D收藏本站。");
+            }
+        }
+    };
+
+    var goSearch = function() {
+        document.location.href = "/search?keyword=" + encodeURIComponent(ctrs.searchText.value);    
+    };
+
+    var popupSearchHelper = function(elem_evt_) {        
+        var arr_param = [["keyword", elem_evt_.value]];
+        var callback = function(ret) {
+            if (ret == null) {
+                objBase.Hide(lyrs.searchHelper);
+                return;
+            }
+            var list_str = "";
+            var arr1 = ret[0];
+            var rows_count;
+            if (arr1 != null) {
+                rows_count = arr1[0].length;                
+                for (var i = 0; i < rows_count; i++)
+                    list_str += arr1[0][i] != null ? "<li search-key=\"" + arr1[0][i] + "\">" + arr1[0][i] + "<span>约" + arr1[1][i] + "个商品</span></li>" : "";
+            }
+
+            if (list_str.length == 0) {
+                objBase.Hide(lyrs.searchHelper);
+                return;
+            }
+            lyrs.searchHelper.innerHTML = "<ul>" + list_str + "</ul>";
+            objBase.Visible(lyrs.searchHelper);
+
+            $("#search-helper li").hover(function() {
+                $("#search-helper li").removeClass("hh-item");
+                $(this).addClass("hh-item");
+            },function() {
+                $(this).removeClass("hh-item");
+            });
+        };
+        objBase.ReadData("/ajax/get_search_helper_items.asp", arr_param, null, false, callback);        
+    };
+
+    var hoverSHItem = function(num_) {        
+        var idx = $("#search-helper ul .hh-item").index();
+        var elems = $("#search-helper li");
+        $(elems).removeClass("hh-item");
+        idx = (idx == -1) ? 0 : idx + num_
+        if (idx == -1)
+            idx = elems.length - 1;
+        else if (idx == elems.length)
+            idx = 0;        
+        $(elems[idx]).addClass("hh-item");
+        ctrs.searchText.value = $(elems[idx]).attr("search-key");
+    };
+
+    var keywordClicked = function(keyword_) {
+        ctrs.searchText.value = keyword_
+        ctrs.searchText.focus();
+        goSearch();        
+    };
+};

@@ -1,0 +1,376 @@
+@charset "gb2312";
+/* CSS Document */
+/*全局定义*/
+body { font-size: 12px; background: #fff; color: #666; font-family: arial,\5b8b\4f53; overflow-y: scroll\9; *overflow-y: auto; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, b, p, img, pre, form, fieldset, input, textarea, blockquote { margin: 0; padding: 0; }
+table, td, tr, th { font-size: 12px; }
+a { text-decoration: none; color: #666; }
+table { margin: 0 auto; }
+img { vertical-align: top; border: 0 none; }
+ol, ul, li { list-style-type: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 12px; }
+a:hover { text-decoration: none; }
+b, em { font-style: normal; font-weight: normal; }
+.clear { clear: both; }
+.LETTER-RED { color: #ff1a3a !important; }
+
+/*头部*/
+.head-info { margin: 0; padding: 0; width: 100%; height: 33px; background: url(http://photo.no5.com.cn/page_2014/images/headbg.jpg) repeat-x; font-family: simsun,arial,Arial Narrow,serif; }
+.infobox { width: 1200px; height: 33px; line-height: 33px; margin: 0 auto; }
+.head-welcome { float: left; width: 50%; }
+.user-control { float: right; }
+.user-control li { float: left; position: relative; padding-right: 10px; }
+.user-control .line { color: #ddd; }
+.user-control .hide { width: 60px; z-index: 1; padding-left: 10px; }
+.user-control .hide:hover { width: 59px; background: #fff; border: 1px solid #dcdcdc; border-bottom: none; border-top: none; }
+.user-control .hide:hover .myaccount { display: block; position: absolute; top: 33px; left: -1px; width: 69px; background: #fff; border: 1px solid #dcdcdc; padding-left: 10px; border-top: none; }
+.user-control .hide:hover .myaccount p { line-height: 20px; height: 20px; }
+.user-control .hide:hover .myaccount p a:hover { text-decoration: underline; color: #ff1a3a; }
+.user-control .hide:hover b { top: 13px; right: 7px; width: 7px; height: 4px; }
+.user-control li b { top: 13px; right: 8px; width: 7px; height: 4px; background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat -252px -30px; position: absolute; overflow: hidden; }
+.user-control li.tel { color: #ff1a3a; font-size: 18px; font-family: Arial, Helvetica, sans-serif; padding-left: 30px; font-style: italic; }
+.user-control li.tel span { width: 16px; height: 13px; top: 9px; left: 7px; background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat -269px -30px; position: absolute; overflow: hidden; }
+.user-control .myaccount { display: none; }
+.headbox { width: 1200px; margin: 0 auto; height: 90px; }
+.headbox div { float: left; }
+.headbox .logo { width: 320px; padding: 15px 0 0 35px; display: inline; }
+/*搜索*/
+.headbox .searchbox { width: 650px; margin-top: 22px; }
+.headbox .searchbox a:hover { text-decoration: underline; color: #ef3621; }
+.headbox .searchbox .hh-item { background-color: #eee; }
+.headbox .search { width: 428px; height: 30px; background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0 -521px; border: 2px solid #02A3F0; }
+.headbox .search:hover { background-position: 0 0; }
+.headbox .search input { border: none; background: none; float: left; width: 341px; height: 14px; color: #666; font-size: 14px; padding: 8px 10px; outline: 0 none; }
+.headbox .search strong { width: 67px; height: 30px; line-height: 30px; cursor: pointer; overflow: hidden; color: #fff; font-size: 14px; text-align: center; float: right; }
+.headbox .hot-key { padding-top: 3px; width: 630px; overflow: hidden; white-space: nowrap; }
+.headbox .hot-key a { height: 22px; line-height: 22px; padding: 4px; }
+#search-helper { position: absolute; visibility: hidden; width: 362px; border: 1px solid #02A3F0; background-color: #fff; z-index: 2; margin-top: 31px; margin-left: -2px; *margin-left: -363px; box-shadow: 3px 3px 5px #b8b8b8; }
+#search-helper li { padding: 5px; cursor: pointer; color: #000; }
+#search-helper li span { position: absolute; right: 5px; color: #999; }
+.headbox .searchbox .del-keywords { position: absolute; visibility: hidden; cursor: pointer; margin-left: 340px; margin-top: 2px; padding: 5px; font-size: 14px; *margin-left: -20px; }
+.headbox .searchbox:hover .del-keywords { visibility: visible; }
+/*购物车*/
+.headbox .shoppingcart { float: right; height: 44px; line-height: 44px; margin-top: 20px; position: relative; width: 195px; }
+.headbox .shoppingcart .trigger { background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0px -30px; display: block; font-size: 12px; padding-left: 70px; position: relative; width: 125px; z-index: 11; height: 44px; line-height: 44px; }
+.headbox .shoppingcart:hover .shoplist { background: #fff; border: 1px solid #dcdcdc; display: block; left: -98px; position: absolute; top: 42px; width: 290px; max-height: 374px; z-index: 10; padding-top: 10px; }
+.headbox .shoppingcart:hover .trigger { background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0px -74px; height: 42px; line-height: 43px; padding-top: 1px; }
+.headbox .shoplist { display: none; }
+.headbox .shoppingcart strong { color: #ff1a3a; margin: 0 4px; font-family: microsoft yahei; }
+.headbox .shoppingcart:hover .shoplist .goodslist { width: 290px; max-height: 300px; overflow-y: auto; }
+.headbox .shoppingcart:hover .shoplist dl { height: 41px; display: block; margin: 0px 15px; padding: 7px 0; background: #fff; border-bottom: 1px dashed #e4e4e4; }
+.headbox .shoppingcart:hover .shoplist .lastdl { border-bottom: none; }
+.headbox .shoppingcart:hover .shoplist dl dt { width: 40px; height: 40px; float: left; }
+.headbox .shoppingcart:hover .shoplist dl dd { float: left; height: 40px; overflow: hidden; line-height: 17px; }
+.headbox .shoppingcart:hover .shoplist dl .pro-name { width: 125px; padding: 5px 10px; height: 30px; }
+.headbox .shoppingcart:hover .shoplist dl .pro-price { width: 58px; text-align: right; float: right; color: #ff1a3a; font-weight: bold; font-family: microsoft yahei; padding: 5px 0; height: 30px; }
+.headbox .shoppingcart:hover .shoplist dl .pro-price a { display: block; font-weight: normal; font-family: simsun; color: #1968c0; cursor: auto; }
+.headbox .shoppingcart:hover .shoplist .sum { border-top: 1px solid #dcdcdc; background: #f8f8f8; }
+.headbox .shoppingcart:hover .shoplist .sum p { line-height: 30px; height: 30px; text-align: right; width: 280px; padding-right: 10px; }
+.headbox .shoppingcart:hover .shoplist .sum p b { font-weight: bold; color: #ff1a3a; padding: 0 4px; font-family: microsoft yahei; }
+.headbox .shoppingcart:hover .shoplist .sum p em { font-weight: bold; color: #ff1a3a; padding: 0 4px; font-family: microsoft yahei; }
+.headbox .shoppingcart:hover .shoplist .sum a { float: right; width: 100px; height: 28px; line-height: 28px; text-align: center; color: #fff; margin: 5px 10px 10px; background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0 -206px; }
+/*导航*/
+.mainnav { width: 100%; background: url(http://photo.no5.com.cn/page_2014/images/navbg.jpg) repeat-x; height: 40px; clear: both; }
+#webf0 strong:first-child { padding-top: 5px; }
+.navbox { width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+.navbox .float-list { position: absolute; left: 0; top: 0; background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0 -117px; z-index: 2; }
+.navbox .float-list, .navbox .float-list-btn { display: block; width: 230px; z-index: 2; height: 40px; line-height: 40px; cursor: default; color: #fff; font-family: microsoft yahei; text-align: center; font-size: 16px; }
+.navbox .subnav { position: absolute; top: 0; left: 230px; width: 960px; height: 40px; line-height: 40px; font-size: 16px; font-family: microsoft yahei; padding-left: 10px; z-index: 2px; }
+.navbox .subnav ul li { float: left; padding: 0 30px; background: url(http://photo.no5.com.cn/page_2014/images/navlibg.jpg) no-repeat left center; }
+.navbox .subnav ul li a { color: #fff; display: block; }
+.navbox .subnav ul li a:hover { color: #2ad0ff; }
+/*侧面分类*/
+.float-list dl { position: relative; float: left; z-index: 2; clear: both; width: 230px; }
+.float-list dl a:hover { color: #0098e0; }
+.float-list dl dt { display: inline; position: relative; float: left; width: 208px; border: 1px solid #e7e7e7; border-top: none; line-height: 22px; overflow: hidden; text-align: left; padding: 13px 0px 6px 20px; background: #f8f8f8; }
+/*.float-list dl dt */ .arrow-right { position: absolute; top: 17px; right: 15px; }
+.arrow-right { background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat -310px -30px; width: 6px; height: 9px; }
+.float-list dl dt.hover { background-color: #fff; width: 210px; z-index: 2; border: 1px solid #bdbdbd; border-right: none; border-left: 2px solid #00adff; padding-left: 19px; padding-top: 12px; }
+.float-list dl dt.hover .arrow-right { top: 16px; right: 17px; }
+.float-list dl dt a { color: #666; }
+.float-list dl dt strong { float: left; width: 228px; height: 18px; overflow: hidden; margin: 0 0 4px; }
+.float-list dl dt strong a { color: #333; font-size: 14px; font-family: microsoft yahei; line-height: 18px; }
+.float-list dl dt p { clear: both; height: 44px; line-height: 22px; overflow: hidden; font-family: simsun; font-size: 12px; }
+.float-list dl dt p a { white-space: nowrap; margin-right: 13px; float: left; }
+.float-list dl dd { display: none; position: absolute; left: 230px; width: 650px; background: #fff; border: 1px solid #bdbdbd; z-index: 1; }
+.float-list dl dd a { color: #666; white-space: nowrap; /*禁止文字自动换行*/ }
+.float-list dl dd .secondlist { float: left; width: 380px; padding: 0 20px; font-family: simsun; font-size: 12px; }
+.float-list dl dd .secondlist li { width: 380px; padding: 10px 0; border-bottom: 1px dotted #ccc; line-height: 22px; overflow: hidden; }
+.float-list dl dd .secondlist li strong { float: left; width: 70px; font-weight: bold; text-align: left; }
+.float-list dl dd .secondlist li strong a { padding: 0; color: #444; }
+.float-list dl dd .secondlist li .float-list-cont { float: left; width: 310px; }
+.float-list dl dd .secondlist li a { padding: 0 13px 0 0; }
+.float-list dl dd .secondlist li .float-list-cont a { float: left; }
+.float-list dl dd .hotbrand { float: left; width: 200px; background: #f8f8f8; padding: 15px; }
+.float-list dl dd .hotbrand h4 { color: #666; font-family: simsun; border-bottom: 1px solid #666; line-height: 30px; height: 30px; text-align: left; }
+.float-list dl dd .hotbrand ul { width: 200px; padding: 10px 0; float: left; }
+.float-list dl dd .hotbrand ul li { border: none; text-align: left; padding-left: 0; font-family: simsun; font-size: 12px; line-height: 22px; float: left; width: 100px; }
+
+/*slide*/
+.first-show { clear: both; }
+.slide { position: relative; z-index: 0; height: 400px; min-width: 990px; overflow: hidden; }
+.slide .mfpSlide-con li { background: #fff no-repeat 50% 0; height: 400px; width: 100%; }
+.slide .mfpSlide-con li .mSc-main { width: 1200px; height: 400px; margin: 0 auto; position: relative; }
+.slide .mfpSlide-con li .mSc-main .mScm-link { position: absolute; display: block; width: 765px; height: 400px; top: 0; left: 230px; overflow: hidden; z-index: 2; }
+#topver-banner { position: absolute; visibility: hidden; overflow: hidden; right: 10px; top: 177px; width: 190px; height: 372px; z-index: 2; }
+#topver-banner li { width: 190px; height: 124px; display: none; }
+.slide .mfpSlide-nav { display: block; position: absolute; visibility: hidden; width: 260px; height: 25px; top: 368px; z-index: 10; }
+.slide .mfpSlide-nav li { font-family: Arial,Verdana; text-indent: 0.25em; text-indent: 0.3\8; padding: 4px; display: block; float: left; width: 14px; height: 14px; background: #e8e8e8; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; margin: 0 5px; overflow: hidden; cursor: pointer; }
+.slide .mfpSlide-nav li.selected { background: #00b5ff; }
+
+/*公告*/
+.first-show .notice { clear: both; width: 770px; height: 33px; margin: 0 auto; padding: 0 199px 0 250px; line-height: 33px; overflow: hidden; }
+.first-show .notice a { clear: #444; }
+.first-show .notice span { display: block; float: left; width: 19px; height: 19px; background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat -409px -30px; margin-top: 6px; margin-right: 6px; }
+.first-show .notice li:hover { text-decoration: underline; }
+/*广告*/
+.image-box1 { width: 969px; height: 187px; margin: 0 auto; padding: 0 0 0 250px; overflow: hidden; }
+.image-box1 a { display: inline; float: left; margin: 0 10px 0 0; }
+
+/*限时抢购*/
+.content { width: 1200px; margin: 0 auto; }
+.qiang { height: 530px; border-bottom: 1px solid #e4e4e4; clear: both; }
+.qiang h2 { border-bottom: 2px solid #ff8c8f; padding: 30px 0 8px 2px; margin-bottom: 10px; }
+.qiang h2 img { width: 248px; height: 24px; }
+.qiang .goodbox { position: relative; float: left; width: 287px; border: 1px solid #e4e4e4; padding: 1px; height: 400px; margin-right: 12px; }
+.qiang .goodbox:hover { border: 1px solid #F00; }
+.qiang .goodbox .time-end { width: 214px; height: 38px; line-height: 38px; color: #999; background: #f8f7f5 url(http://photo.no5.com.cn/page_2014/images/clock.jpg) no-repeat 33px 5px; padding-left: 73px; }
+.qiang .goodbox .time-end b { font-size: 18px; font-weight: bold; color: #ff1a3a; font-family: Arial, Helvetica, sans-serif; margin: 0 5px; }
+.qiang .goodbox .bimg { width: 260px; height: 260px; margin: 13px; }
+.qiang .goodbox .pro-name { font-weight: bold; line-height: 18px; height: 32px; padding: 0 13px; width: 261px; overflow: hidden; text-overflow: ellipsis; }
+.qiang .goodbox .pricebg { position: absolute; top: 362px; left: -1px; background: url(http://photo.no5.com.cn/page_2014/images/i_03.jpg) no-repeat; width: 271px; height: 55px; color: #fff; font-size: 18px; font-weight: bold; font-family: microsoft yahei; padding-top: 10px; padding-left: 20px; }
+.qiang .goodbox .pricebg span { font-size: 36px; font-family: Arial; }
+.qiang .goodbox .infonum { position: absolute; top: 424px; right: 10px; }
+.qiang .goodbox .infonum strong { color: #ff1a3a; margin-right: 4px; font-size: 14px; font-family: Arial; }
+
+/*tabs*/
+.sale { height: 477px; clear: both; margin-top: 20px; border-bottom: 1px solid #e4e4e4; }
+.sale .saletabs { width: 1200px; height: 40px; line-height: 40px; background: url(http://photo.no5.com.cn/page_2014/images/tabs_bg.jpg) repeat-x; font-family: microsoft yahei; font-size: 18px; font-weight: bold; border-bottom: 2px solid #d0d0d0; _border-bottom: 1px solid #d0d0d0; position: relative; }
+.sale .saletabs ul li { float: left; color: #333; cursor: pointer; padding: 0 82px; background: url(http://photo.no5.com.cn/page_2014/images/tabsli_bg.jpg) no-repeat right bottom; }
+.tab-arrow { position: absolute; top: 35px; left: 0; height: 5px; border-bottom: 2px solid #0094ff; overflow: hidden; text-align: center; width: 240px; }
+.tab-arrow b { display: inline-block; eight: 0px; line-height: 0px; width: 0px; border: 5px solid #000; border-color: transparent transparent #0094ff; border-style: dashed dashed solid; margin-top: -4px; }
+.sale .saletabs ul .hover { color: #0094ff; }
+.sale .salebox { padding-top: 15px; }
+.con-two { margin-top: 5px; }
+.con-two .salebox-1, .con-two .salebox-2, .con-two .salebox-3, .con-two .salebox-4 { float: left; }
+.con-two .salebox-1, .con-two .salebox-2, .con-two .salebox-3, .con-two .salebox-2 .salebox-2-l { border-right: 1px solid #f1f1f1; }
+.con-two .salebox-1, .con-two .salebox-2 .salebox-2-l, .con-two .salebox-2 .salebox-2-r, .con-two .salebox-3, .con-two .salebox-4 dl { width: 239px; }
+.con-two dl dt { text-align: center; }
+.con-two dl dd { padding: 0 13px; font-family: microsoft yahei; font-size: 14px; line-height: 18px; overflow: hidden; text-overflow: ellipsis; }
+.con-two dl .good-name, .con-two dl .good-name a { color: #666; margin-bottom: 10px; }
+.con-two dl .oneline { height: 18px; margin-top: 5px; margin-bottom: 0; overflow: hidden; text-overflow: ellipsis; }
+.con-two dl .good-exce, .con-two dl .good-exce a { color: #000; margin-bottom: 40px; }
+.con-two dl .good-price { font-size: 18px; font-family: microsoft yahei; color: #ff1a3a; }
+.con-two dl .good-price .good-price-cur { font-size: 24px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.con-two dl .good-price .zhekou { font-family: simsun; font-size: 12px; }
+.con-two .salebox-2, .con-two .salebox-2 .salebox-2-d { width: 479px; }
+.con-two .salebox-2 .salebox-2-d dt, .con-two .salebox-2 .salebox-2-d dd { float: left; width: 220px; }
+.con-two .salebox-2 .salebox-2-d { border-top: 1px solid #f1f1f1; padding-top: 10px; }
+.con-two .salebox-2 div { float: left; }
+.con-two .salebox-2 .salebox-2-l, .con-two .salebox-4 dl { padding-bottom: 10px; }
+.con-two .salebox-3 dl dt { margin-top: 15px; }
+.con-two .salebox-2 .salebox-2-l, .con-two .salebox-2 .salebox-2-r { height: 200px; }
+.con-two .salebox-4 .s-4-t { border-bottom: 1px solid #f1f1f1; }
+#con_two_2 dl { float: left; width: 228px; margin-right: 15px; }
+#con_two_2 .lastdl, #con_two_4 .lastdl { margin-right: 0; }
+#con_two_2 dl dt { width: 228px; height: 300px; }
+#con_two_2 dl dd { padding: 0 5px; }
+#con_two_2 dl .pro-name { padding-top: 14px; padding-bottom: 12px; height: 11px; overflow: hidden; text-overflow: ellipsis; }
+#con_two_2 dl .whotui { font-weight: bold; color: #0099ff; }
+#con_two_2 dl .pro-name a, #con_two_4 dl .pro-name a { color: #444; }
+#con_two_2 dl .neir { background: url(http://photo.no5.com.cn/page_2014/images/nrbg.jpg) no-repeat 5px 0; line-height: 22px; margin-top: 15px; color: #999; text-indent: 2em; height: 52px; overflow: hidden; text-overflow: ellipsis; }
+#con_two_2 dl .neir a { color: #0099ff; }
+#con_two_4 dl { width: 206px; height: 394px; border: 1px solid #ededed; border-bottom: 4px solid #ededed; background: #f6f6f6; margin-right: 15px; padding: 10px; float: left; }
+#con_two_4 dl dt { width: 180px; height: 180px; background: #fff; padding: 13px; }
+#con_two_4 dl dd { padding: 0 3px; width: 200px; }
+#con_two_4 dl .pro-name { border-bottom: 1px solid #d1d1d1; height: 12px; overflow: hidden; text-overflow: ellipsis; padding-top: 19px; padding-bottom: 10px; margin-bottom: 3px; }
+#con_two_4 dl .neir { color: #999; line-height: 18px; height: 32px; overflow: hidden; text-overflow: ellipsis; margin-top: 13px; }
+#con_two_4 dl .firstneir { margin-top: 16px; }
+#con_two_4 dl .neir span { font-weight: bold; color: #0099ff; margin-right: 7px; }
+
+/*品牌活动*/
+.brand-tit { border-bottom: 2px solid #d0d0d0; margin: 20px 0 10px 0; width: 1200px; height: 40px; float: left; }
+.brand-tit-l { font-family: microsoft yahei; font-size: 18px; color: #333; float: left; font-weight: bold; padding-left: 2px; width: 230px; height: 40px; line-height: 40px; }
+.brand-tit-r { float: right; display: inline; height: 25px; width: 900px; margin-top: 10px; }
+.brand-tit-r dl dd { float: right; height: 25px; line-height: 25px; }
+.brand-tit-r dl dd a { height: 25px; line-height: 25px; padding: 0 15px; float: left; background: url(http://photo.no5.com.cn/page_2014/images/brangtit.jpg) no-repeat right center; }
+.brand-tit-r dl dd:first-child a { background: none; }
+.brand-main .brand-item { float: left; width: 236px; height: 300px; margin-right: 5px; }
+.brand-main .last { margin-right: 0; }
+
+/*护肤*/
+.hufu-tit { border-bottom: 2px solid #0094ff; margin-top: 24px; }
+.hufu-main { width: 1200px; height: 538px; border-bottom: 1px solid #e4e4e4; clear: both; }
+.hufu-main .hufu-banner { float: left; width: 268px; height: 480px; }
+.hufu-main .hufu-list { width: 690px; float: left; }
+.hufu-main .hufu-top { float: right; width: 218px; margin-left: 24px; }
+.hufu-main .hufu-list .hufu-item { width: 344px; float: left; padding: 7px 0 14px 0; height: 180px; border-bottom: 1px solid #f1f1f1; }
+.hufu-main .hufu-list .firstdl { border-right: 1px solid #f1f1f1; }
+.hufu-main .hufu-list .hufu-item dt { width: 190px; float: left; text-align: center; }
+.hufu-main .hufu-list .hufu-item dd { width: 150px; float: left; font-size: 14px; line-height: 18px; overflow: hidden; text-overflow: ellipsis; }
+.hufu-main .hufu-list .hufu-item .good-name { color: #666; margin-top: 28px; margin-bottom: 10px; height: 36px; font-family: microsoft yahei; }
+.hufu-main .hufu-list .hufu-item .good-exce { color: #000; margin-bottom: 30px; height: 32px; font-family: microsoft yahei; }
+.hufu-main .hufu-list .hufu-item .good-exce a { color: #000; }
+.hufu-main .hufu-list .hufu-item .good-price { font-size: 18px; font-family: microsoft yahei; }
+.hufu-main .hufu-list .good-price { font-size: 18px; font-family: microsoft yahei; color: #ff1a3a; }
+.hufu-main .hufu-list .good-price .good-price-cur { font-size: 24px; font-family: Arial; font-weight: bold; }
+.hufu-main .hufu-list .good-price .zhekou { font-family: simsun; font-size: 12px; }
+.hufu-main .hufu-list .hufu-item-d { width: 181px; border-right: 1px solid #f1f1f1; float: left; padding: 0 24px; padding-top: 15px; font-family: microsoft yahei; font-size: 14px; }
+.hufu-main .hufu-list .lastdl { border-right: none; }
+.hufu-main .hufu-list .hufu-item-d .good-name { color: #666; height: 18px; overflow: hidden; text-overflow: ellipsis; }
+.hufu-main .hufu-list .hufu-item-d .good-exce { color: #000; height: 18px; overflow: hidden; text-overflow: ellipsis; margin-bottom: 12px; margin-top: 3px; }
+.hufu-main .hufu-list .hufu-item-d .good-exce a { color: #000; }
+
+/*护肤排行*/
+.hufu-main .hufu-top h2 { font-family: microsoft yahei; font-size: 16px; line-height: 32px; height: 32px; color: #ff1a3a; text-align: center; width: 218px; border-bottom: 2px solid #d0d0d0; }
+.list_show li { list-style: none; float: left; width: 218px; }
+.list_show li .toplist { display: block; height: 42px; line-height: 42px; border-bottom: 1px solid #e4e4e4; padding: 0 8px; background: url(http://photo.no5.com.cn/page_2014/images/topbg.jpg) no-repeat 7px 13px; overflow: hidden; text-overflow: ellipsis; }
+.list_show li .num { font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #e9025e; display: block; width: 22px; height: 42px; line-height: 44px; padding-left: 5px; float: left; }
+.list_show li div { display: none; float: left; }
+.list_show li.hover span { display: none; }
+.list_show li.hover div { display: block; height: 204px; width: 176px; background: #fff; color: #aa0; border-bottom: 1px solid #e4e4e4; text-align: center; padding: 13px 21px; }
+.list_show li.hover div .top-name { height: 28px; line-height: 28px; overflow: hidden; text-overflow: ellipsis; font-weight: bold; }
+.list_show li.hover div .top-price { font-family: microsoft yahei; font-size: 14px; color: #ff1a3a; font-weight: bold; }
+.hufu-main .hufu-brand { width: 1188px; height: 58px; float: left; border-top: 1px solid #e4e4e4; padding: 0 6px; }
+.hufu-main .hufu-brand a { display: block; float: left; margin: 11px 12px; display: inline; }
+.hufu-main .hufu-brand a img { width: 75px; height: 36px; }
+
+/*香水*/
+.hufu-main .perfume-img1 { float: left; width: 326px; height: 480px; margin-right: 1px; }
+.hufu-main .perfumegroup { float: left; width: 355px; height: 480px; margin-right: 1px; }
+.hufu-main .perfume-img5 { float: left; width: 275px; height: 480px; }
+.hufu-main .perfumegroup .perfume-img2 { width: 355px; height: 276px; margin-bottom: 1px; }
+.hufu-main .perfumegroup .perfume-img3 { float: left; width: 177px; height: 203px; margin-right: 1px; }
+.hufu-main .perfumegroup .perfume-img4 { float: left; width: 177px; height: 203px; }
+
+/*男士*/
+.hufu-main .men-list { width: 614px; float: left; height: 480px; }
+.hufu-main .men-banner { float: left; width: 344px; height: 480px; }
+.hufu-main .men-list .men-item { float: left; width: 184px; height: 227px; border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; padding: 6px 10px; text-align: center; }
+.hufu-main .men-list .men-item dt { text-align: center; width: 180px; height: 180px; }
+.hufu-main .men-list .men-item dd { font-family: microsoft yahei; font-size: 14px; margin-top: 4px; height: 18px; overflow: hidden; text-overflow: ellipsis; }
+.hufu-main .men-list .men-item .good-exce { color: #ff1a3a; font-weight: bold; text-align: center; }
+.hufu-main .men-list .men-item .good-name { margin-top: 5px; }
+.hufu-main .men-list .men-item .good-price { color: #ff1a3a; font-size: 16px; font-family: microsoft yahei; font-weight: bold; }
+.hufu-main .men-list .men-item .good-price .zhekou { font-family: simsun; font-size: 12px; font-weight: normal; }
+.hufu-main .men-list .lastdl { border-right: none; }
+.hufu-main .men-list .bottomdl { border-bottom: none; }
+
+/*资讯*/
+.beautyinfo { float: left; width: 765px; border: 1px solid #e4e4e4; margin-top: 25px; border-top: 2px solid #d0d0d0; padding: 1px 20px; height: 478px; overflow: hidden; }
+.beautyinfo h2 { font-size: 16px; font-family: microsoft yahei; color: #333; height: 36px; line-height: 36px; border-bottom: 1px solid #e4e4e4; padding-left: 4px; margin-bottom: 20px; }
+.beautyinfo .info-l { float: left; width: 250px; padding: 0 32px 0 10px; }
+.beautyinfo .info-l .title { color: #545454; font-size: 14px; font-weight: bold; margin-top: 13px; margin-bottom: 5px; height: 16px; line-height: 16px; overflow: hidden; }
+.beautyinfo .neir, .beautyshare dl .neir { color: #999; line-height: 22px; height: 48px; overflow: hidden; text-overflow: ellipsis; }
+.beautyinfo .neir a { color: #c80f2f; }
+.beautyinfo .info-r { float: left; width: 465px; }
+.beautyinfo .info-r dl { height: 140px; clear: both; }
+.beautyinfo .info-r dl dt { float: left; width: 174px; }
+.beautyinfo .info-r dl dd { float: left; width: 291px; }
+.beautyinfo .info-r .title, .beautyshare dl .title { color: #545454; font-weight: bold; line-height: 36px; height: 36px; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; }
+.beautyinfo .info-r .title span { color: #00a2ff; margin-right: 9px; }
+.beautyinfo .info-r .neir { height: 68px; }
+
+/*达人分享*/
+.beautyshare { float: right; width: 368px; border: 1px solid #e4e4e4; background: #f9f9f9; margin-top: 25px; border-top: 2px solid #d0d0d0; position: relative; padding-bottom: 10px; }
+.beautyshare h2 { position: absolute; width: 338px; top: 9px; left: -9px; background: url(http://photo.no5.com.cn/page_2014/images/dbg.jpg) no-repeat; height: 43px; line-height: 36px; font-size: 16px; font-family: microsoft yahei; color: #fff; padding-left: 19px; }
+.beautyshare h2 span { float: right; font-family: simsun; font-size: 12px; color: #666; font-weight: normal; }
+.beautyshare dl { margin: 0 22px; width: 324px; height: 93px; border-top: 1px dotted #aaa; padding-top: 11px; }
+.beautyshare .firstdl { border-top: none; padding-top: 61px; }
+.beautyshare dl dt { float: right; width: 100px; text-align: right; }
+.beautyshare dl dt a img { border: 1px solid #ccc; }
+.beautyshare dl dd { float: left; width: 224px; }
+.beautyshare dl .title { line-height: 29px; height: 29px; }
+.beautyshare dl .neir { line-height: 18px; height: 38px; }
+.beautyshare dl .neir a { color: #999; }
+.beautyshare dl .neir a:hover { color: #c80f2f; text-decoration: underline; }
+.beautyshare dl .neir span { font-weight: bold; color: #c80f2f; }
+
+/*尾部*/
+.footer { float: left; width: 100%; height: 200px; background: url(http://photo.no5.com.cn/page_2014/images/f_03.jpg) repeat-x; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1; margin: 30px auto; overflow: hidden; }
+.footer .f-cont { width: 1200px; margin: 25px auto; }
+.footer .f-cont .f-info { float: left; width: 240px; padding-left: 44px; }
+.footer .f-cont .f-info .tel { background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0 -157px; height: 49px; width: 197px; }
+.footer .f-cont .f-info .tel .num { color: #ff1a3a; font-size: 20px; font-family: Arial; padding-left: 72px; font-style: italic; font-weight: bold; padding-top: 8px; }
+.footer .f-cont .f-info .tel .time { color: #444; text-align: right; width: 197px; }
+.footer .f-cont .f-info .weibo { background: url(http://photo.no5.com.cn/page_2014/images/w.jpg) no-repeat; width: 197px; height: 22px; line-height: 22px; font-family: microsoft yahei; margin-top: 10px; font-size: 14px; font-family: microsoft yahei; font-weight: bold; padding-left: 30px; }
+.footer .f-cont .f-info .weibo a { margin-left: 6px; }
+.footer .f-cont .f-info .ding { margin-top: 10px; }
+.footer .f-cont .f-info .ding input { width: 132px; height: 24px; line-height: 24px; background: #fff; border: 1px solid #e8e8e8; color: #666; padding-left: 4px; font-size: 12px; outline: 0 none; }
+#subscribe_btn { margin-left: 6px; }
+.footer .f-cont .f-info .ps { color: #9b9b9b; line-height: 22px; padding-left: 3px; }
+.footer .f-cont .howto { float: left; width: 100px; padding-left: 25px; border-left: 1px solid #e1e1e1; height: 150px; }
+.footer .f-cont .howto dt { margin-bottom: 14px; }
+.footer .f-cont .howto dt a { font-size: 16px; color: #444; font-family: microsoft yahei; }
+.footer .f-cont .howto dd a { height: 22px; line-height: 22px; color: #999; }
+.footer .f-cont .lastdl { border-right: 1px solid #e1e1e1; }
+.footer .f-cont .wei { padding-top: 11px; padding-left: 33px; float: left; background: url(http://photo.no5.com.cn/page_2014/images/ss.jpg) no-repeat 30px 104px; width: 125px; height: 150px; }
+.footer .f-cont .wei img { border: 1px solid #e1e1e1; }
+.foot-bottom { width: 880px; border-bottom: 1px solid #ccc; height: 130px; clear: both; margin: 0 auto; padding: 0 160px 0 160px; }
+.foot-bottom .fb { width: 140px; height: 110px; float: left; margin: 0 40px; }
+.foot-bottom .fb dt { width: 108px; height: 50px; margin-bottom: 10px; margin-left: 16px; }
+.foot-bottom .fb dd { text-align: center; line-height: 20px; height: 20px; font-size: 13px; color: #444; font-family: microsoft yahei; }
+.beian { text-align: center; line-height: 44px; height: 44px; font-size: 14px; color: #444; font-family: microsoft yahei; }
+
+/*二级页面共有部分*/
+.shaixuan dl { display: none; }
+.content .current { line-height: 34px; color: #999; width: 980px; height: 34px; margin-top: 15px; }
+.content .current a { color: #333; }
+.content .current a:hover { color: #ff1a3a; }
+.content .current .STYLE { margin: 0 10px; }
+.content .current .cpname { color: #4e7fc2; margin: 0px; }
+/*left*/
+.content .c-left { float: left; width: 230px; }
+.content .c-left .sidebar { width: 228px; border: 1px solid #e4e4e4; color: #333; }
+.content .c-left .sidebar a { color: #333; }
+.content .c-left .sidebar a:hover, .content .c-left .sidebar li:hover a { color: #ff1a3a; }
+.content .c-left .sidebar h3 { width: 228px; background: url(http://photo.no5.com.cn/page_2014/images/h3bg.jpg) repeat-x; height: 36px; line-height: 36px; cursor: pointer; font-size: 13px; }
+.content .c-left .sidebar h3 .open { background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0 -234px; width: 15px; height: 14px; float: left; margin: 10px 10px 0px 12px; }
+.content .c-left .sidebar h3 .close { background: url(http://photo.no5.com.cn/page_2014/images/detail.gif?v=20140610) no-repeat 0 -248px; width: 15px; height: 14px; float: left; margin: 10px 10px 0px 12px; }
+.content .c-left .sidebar .sl { font-size: 12px; color: #999; font-weight: normal; margin-left: 2px; }
+.content .c-left .sidebar ul { width: 154px; border-bottom: 1px solid #e4e4e4; padding: 8px 37px; }
+.content .c-left .sidebar ul li { line-height: 26px; height: 26px; cursor: pointer; }
+.content .c-left .box_tj { width: 228px; border: 1px solid #e4e4e4; margin-top: 10px; }
+.content .c-left .title_tj { width: 226px; height: 33px; line-height: 33px; margin: 1px; background: url(http://photo.no5.com.cn/page_2014/images/p2lbg.jpg) repeat-x; color: #333; font-family: microsoft yahei; font-size: 14px; font-weight: bold; text-align: center; border-bottom: 1px solid #e4e4e4; }
+.content .c-left .good_tj { border-bottom: 1px dashed #e4e4e4; text-align: center; padding: 6px; width: 216px; }
+.content .c-left .imgbox { width: 120px; height: 120px; margin: 10px auto; }
+.content .c-left .textbox p { line-height: 20px; }
+.content .c-left .textbox .proname { width: 210px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; padding: 0 3px; }
+.content .c-left .textbox .proprice { font-family: microsoft yahei; color: #ff1a3a; font-size: 14px; font-weight: bold; }
+.content .c-left .textbox .proprice span { font-family: verdana; }
+.content .c-left .good_rx { padding: 15px 10px; margin-bottom: 0px; width: 208px; height: 82px; overflow: hidden; }
+.content .c-left .tl_img { float: left; width: 100px; height: 82px; text-align: left; }
+.content .c-left .tl_text { float: left; width: 102px; padding-top: 15px; }
+.content .c-left .tl_text p { line-height: 16px; }
+.content .c-left .rx_name { text-align: left; height: 30px; overflow: hidden; }
+.content .c-left .rx_price { text-align: right; margin-top: 8px; font-family: microsoft yahei; color: #ff1a3a; font-size: 14px; font-weight: bold; }
+.content .c-left .rx_price span { font-family: verdana; }
+.content .c-left .good_zj p { line-height: 16px; }
+.content .c-left .box_tj .lastdiv { border-bottom: none; }
+/*right*/
+.content .c-right { width: 960px; float: right; }
+/*right下部翻页*/
+.content .page-below { clear: both; }
+.content .page-below .inner { float: right; margin-top: 20px; }
+.content .page-below a, .content .page-below span { float: left; height: 20px; padding: 2px 10px; border: 1px solid #ccc; margin-left: 2px; font-family: arial; line-height: 20px; font-size: 12px; overflow: hidden; color: #005aa0; background: #fff; }
+.content .page-below a:hover { background-color: #ccc; }
+.content .page-below .elli { float: left; padding: 0 10px; font-family: verdana; border: none; background: none; }
+.content .page-below .disa-btn { color: #ccc; cursor: default; }
+.content .page-below .curr { background: #02a3f0; color: #fff; border: 1px solid #02a3f0; font-weight: bold; cursor: default; }
+.content .page-below a.curr:hover { background-color: #02a3f0; }
+
+.kfbox { position: fixed; _position: absolute; width: 58px; bottom: 8px; margin-left: 1210px; _margin-left: 0px; z-index: 100; _right: -10px; _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)); }
+.kfbox .top { visibility: hidden; }
+.kfbox dl { font-family: microsoft yahei; font-size: 12px; color: #444; width: 56px; background: #fff; border: 1px solid #eee; padding: 8px 0; text-align: center; cursor: pointer; }
+.kfbox .kf dt { width: 22px; height: 24px; overflow: hidden; background: url(http://photo.no5.com.cn/page_2014/images/kf.jpg) no-repeat 0 0; margin: 0 auto; }
+.kfbox dl dd { margin-top: 8px; }
+.kfbox .top dt { width: 22px; height: 21px; overflow: hidden; background: url(http://photo.no5.com.cn/page_2014/images/kf.jpg) no-repeat 0 -24px; margin: 0 auto; }
+
+#lyrMask { position: fixed; _position: absolute; visibility: hidden; width: 100%; height: 100%; top: 0px; left: 0px; background-color: #666; moz-opacity: 0.2; opacity: 0.2; filter: alpha(opacity=20); z-index: 100; }
+#qrcode-box { position: absolute; background: url(http://photo.no5.com.cn/page/common/qrcode-app-80.png?4) no-repeat; width: 80px; height: 80px; margin-left: 500px; margin-top: -15px; }
+#mobile-menu { position: absolute; visibility: hidden; border: 1px solid #999; background-color: #fff; margin-left: -50px; width: 180px; z-index: 10; padding: 5px; box-shadow: 3px 3px 5px #b8b8b8; margin-top: 0px; }
+#mobile-menu .app { background: url(http://photo.no5.com.cn/page/common/qrcode-app-80.png?4) no-repeat; height: 90px; border-bottom: 1px solid #ccc; padding-left: 85px; padding-top: 2px; }
+#mobile-menu .app p a { width: 25px; height: 25px; display: inline-block; background: url(http://photo.no5.com.cn/page/common/mobile-system.png) no-repeat; margin-right: 5px; margin-top: 5px; }
+#mobile-menu .app p a.android { background-position: 0px -26px; }
+#mobile-menu .gzh { background: url(http://photo.no5.com.cn/page/common/qrcode-gzh-80.jpg) no-repeat 0px 10px; height: 80px; padding-top: 13px; padding-left: 85px; }

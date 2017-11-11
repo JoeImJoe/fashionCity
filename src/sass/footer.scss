@@ -1,0 +1,73 @@
+footer{
+    .ft{
+        border:1px solid #ccc;
+        background-color: #FBFBFB;
+        height: 200px;
+        .container{
+          .fl1{
+                width: 200px;float: left;
+                .tu{
+                        background: url('../../img/sp.fw.png') -319px 0;
+                        width: 225px;height: 91px;
+                       } 
+                   input,button{
+                                    float: left;
+                                    height: 25px;
+
+                                   }
+                   input{
+                            width: 137px;margin-left: 10px;
+                           }
+                   button{
+                            width: 50px;
+                           }
+                   p{
+                        display: block;float: left;padding: 10px;
+                        
+                       }
+          }
+          .fl2{
+                float: left;margin-left: 100px;
+                &>li{
+                    width: 125px;border-left:1px solid #ccc;height: 150px;float: left;
+                    &:last-child{
+                        border-right:1px solid #ccc;
+                    }
+                   dl{
+                        dt{
+                            padding:0 0 10px 40px;font-weight: bold;
+                            
+                        }
+                        dd{
+                                padding-bottom: 5px;display: block;
+                            }
+                    }
+                }
+          }
+          .fr{
+            float: right;width: 115px;height: 134px;background: url("../../img/sp.fw.png") 0 -102px;
+          }
+        }
+    }
+    .fb{
+        .container{
+            height: 204px;border-bottom:1px solid #ccc;padding-left:80px;
+            .t1{
+                background: url("../../img/sp.fw.png") -126px -102px;width: 153px;height: 119px;float: left;margin-left:100px;
+                
+            }
+            .t2{
+                background: url("../../img/sp.fw.png") -288px -103px;width: 157px;height: 119px;float: left;margin-left:100px;
+            }
+            .t3{
+                background: url("../../img/sp.fw.png") -458px -105px;width: 140px;height: 119px;float: left;margin-left:100px;
+            }
+            .t4{
+                background: url("../../img/sp.fw.png") -606px -104px;width: 157px;height: 109px;float: left;margin-left:100px;
+            }
+        }
+    }
+    .co{padding-top: 10px;
+        p{text-align: center;}
+    }
+}
