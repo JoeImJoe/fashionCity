@@ -1,5 +1,5 @@
 .pho{
-    min-width: 1582px;min-height: 8350px;
+    min-width: 1582px;min-height: 5000px;
     background: url('../../img/pho1.png') repeat;
    #banner{
         margin: 0 auto;width: 1200px;
@@ -51,5 +51,239 @@
                 }
             }
         }
+        overflow:hidden;
+    }
+    .blue{ width: 1100px;margin: 0 auto;
+        
+               
+                .tu{
+                    width: 1100px;height: 176px;background: url('../../img/sp.fw.png') 0 -335px;margin-left: -3px;
+
+                    }
+                
+                        ul{
+                            overflow:hidden;
+                             li{
+                                width: 270px;height: 368px;border:2px solid #F4F3EF;float: left;margin-left: 4px;background:#F4F3EF;
+                                margin-bottom: 20px;
+                                    .lt{
+                                        background:#F4F3EF;height: 310px;
+                                            img{
+                                                width: 265px;
+                                            }
+                                            p{
+                                                text-align: center;margin-top: 5px;
+                                                span{
+                                                    color:red;margin-top: 10px;display: block;
+                                                }
+                                            }
+                                        }
+                                    .lb{
+                                            color:#FFFFF4;
+                                            
+                                            .button{
+                                                float: right;
+                                                width: 70px;
+                                                height: 70px;
+                                                background: #F70422;
+                                                font-size: 25px;
+                                                line-height: 40px;
+                                                margin-top: -55px;
+                                               
+                                                font-weight: bold;
+                                                color:#fff;
+                                                padding:5px 0 0 10px;
+                                                line-height: 30px;
+
+                                            }
+                                    }
+                             }
+                        }
+                
+        
+        .bbottom{
+                    width: 1100px;margin: 0 auto;
+                .tu{
+                    width: 1100px;height: 142px;background: url('../../img/sp.fw.png') -1px  -519px;margin-left: -3px;
+                    }
+                .bblist{
+                        ul{
+                            li{
+                                .lt{
+                                        p{
+                                             font-size:20px;
+                                        }
+                                    }
+                                .lb{
+                                    .button{
+                                        width: 120px;
+                                        height: 30px;
+                                        font-size: 18px;
+                                        margin: 10px 65px;
+                                        line-height: 30px;
+                                    }
+                                }
+                                
+                                
+                            }
+                        }
+                }
+        }
     }
 } 
+main{
+    .xianshi{
+        h2{
+            color:#ccc;
+            border-bottom:1px solid red;
+            font-size: 20px;
+            padding: 10px 0;
+            span{
+                color:red;
+            }
+        }
+        #xianlist{overflow:hidden;
+            li{
+                float: left;width: 270px;margin: 15px; 
+
+                #xiand{
+                    background-color: #ccc;height: 20px;text-align: center;font-size: 16px;
+                    span{
+                        color:red;
+                    }
+                }
+                img{
+                    width: 265px;
+                }
+                P{
+                    font-weight: bold;
+                }
+                .xb{
+                        background-color: #FD1D5B;height: 50px;
+                         line-height: 50px;
+                        .pr{
+                                font-size: 30px;color:#fff;
+                            }
+                        .btn{
+                            float: right;
+                            background-color: #F5EB10;
+                            width: 70px;height: 50px;
+                            color:#AE7D07;
+                            font-size: 20px;
+
+                        }
+                }
+                
+            }
+        }
+        
+    }
+    .tab{
+            #tabul{
+                overflow:hidden;width: 1200px;margin: 0 auto;height: 500px;
+                li{
+                    width: 234px;height: 60px;float: left;margin-left: 5px;background-color: #F8F8F8;text-align: center;font-size: 20px;font-weight: bold;padding-top: 30px;
+                    &:hover{
+                        border-bottom:2px solid skyblue;
+                    }
+                    .content{
+                        overflow:hidden;height: 500px;
+                        img{
+                            margin-top: -10px;
+                            padding-left: 20px;
+                            display:block;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    #pinpaihuodong{
+        margin-top: -20px;
+        .pb{
+                margin: 0 auto;width: 1200px;
+                img{
+                display:block;
+                
+            }
+        }
+      
+    }
+    .hufu{
+        overflow:hidden;height: 600px;
+        .htop{
+            border-bottom:2px solid red;
+            overflow:hidden;
+            padding:  10px 0;
+            #htl{
+                font-size: 25px;color:skyblue;
+                span{
+                    color:red;font-weight: bold;
+                }
+                float: left;
+            }
+            ul{
+                float: right;
+                li{
+                    float: left;
+                    span{
+                        border-right:1px solid #ccc;
+                        padding:0 10px;
+                    }
+                    &:last-child{
+                        span{
+                            border:none;
+                        }
+                    }
+                    &:nth-child(2),&:nth-child(5){
+                        span{
+                            color:red;
+                        }
+                    }
+                }
+            }
+        }
+        .hbl{
+            float: left;
+        }
+        .hbr{
+            float: right;
+            .fqtop{
+                text-align: center;width: 220px;height: 42px;line-height: 40px;
+                border-bottom:2px solid red;font-size: 20px;color:red;
+            }
+            .fq{
+                ul{
+                    li{
+                        width: 220px;
+                       display:none;
+                        img{
+                            width: 200px;
+                        }
+                        div{border:none;
+                            &:first-child{
+                                height: 20px;overflow:hidden;
+                                p{
+                                    font-size: 16px;
+                                
+                                }
+                            }
+                             text-align: center;
+                             padding-bottom: 10px;
+                             span{
+                                font-size: 25px;color:red;text-align: center;width: 60px;margin-left:50px;
+                             }
+                        }
+                    }
+                    div{
+                        height: 46px;line-height: 46px;font-size: 16px;border-bottom:1px solid red;
+                        span{
+                            float: left;padding: 0 5px;font-size: 20px;color:red;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,9 +2,9 @@
 	
 	include 'connect.php';
 	// 编写查询sql语句
-	$kind = isset($_GET['kind']) ? $_GET['kind'] : '';
+	$fenlei = isset($_GET['fenlei']) ? $_GET['fenlei'] : '';
 
-	$sql = "SELECT * FROM goods WHERE kind='".$kind."'";
+	$sql = "SELECT * FROM goods WHERE price<'".$fenlei."'";
 	// "SELECT * FROM user where user_name='".$name."'";
 
 	// 利用sql语句查询数据库

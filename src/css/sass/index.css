@@ -1,4 +1,4 @@
-.pho { min-width: 1582px; min-height: 8350px; background: url("../../img/pho1.png") repeat; }
+.pho { min-width: 1582px; min-height: 5000px; background: url("../../img/pho1.png") repeat; }
 
 .pho #banner { margin: 0 auto; width: 1200px; }
 
@@ -6,7 +6,7 @@
 
 .pho .gd { padding-left: 45px; margin: 0 auto; width: 1200px; }
 
-.pho .mlist { width: 1100px; margin: 0 auto; }
+.pho .mlist { width: 1100px; margin: 0 auto; overflow: hidden; }
 
 .pho .mlist .mt { background: url("../../img/sp.fw.png") 0 -243px; width: 1100px; height: 82px; }
 
@@ -27,3 +27,109 @@
 .pho .mlist .mb ul li .lb .miaosha { font-size: 30px; float: left; }
 
 .pho .mlist .mb ul li .lb .button { float: right; width: 80px; height: 40px; background: #FFC317; font-size: 20px; line-height: 40px; margin-top: -20px; }
+
+.pho .blue { width: 1100px; margin: 0 auto; }
+
+.pho .blue .tu { width: 1100px; height: 176px; background: url("../../img/sp.fw.png") 0 -335px; margin-left: -3px; }
+
+.pho .blue ul { overflow: hidden; }
+
+.pho .blue ul li { width: 270px; height: 368px; border: 2px solid #F4F3EF; float: left; margin-left: 4px; background: #F4F3EF; margin-bottom: 20px; }
+
+.pho .blue ul li .lt { background: #F4F3EF; height: 310px; }
+
+.pho .blue ul li .lt img { width: 265px; }
+
+.pho .blue ul li .lt p { text-align: center; margin-top: 5px; }
+
+.pho .blue ul li .lt p span { color: red; margin-top: 10px; display: block; }
+
+.pho .blue ul li .lb { color: #FFFFF4; }
+
+.pho .blue ul li .lb .button { float: right; width: 70px; height: 70px; background: #F70422; font-size: 25px; line-height: 40px; margin-top: -55px; font-weight: bold; color: #fff; padding: 5px 0 0 10px; line-height: 30px; }
+
+.pho .blue .bbottom { width: 1100px; margin: 0 auto; }
+
+.pho .blue .bbottom .tu { width: 1100px; height: 142px; background: url("../../img/sp.fw.png") -1px -519px; margin-left: -3px; }
+
+.pho .blue .bbottom .bblist ul li .lt p { font-size: 20px; }
+
+.pho .blue .bbottom .bblist ul li .lb .button { width: 120px; height: 30px; font-size: 18px; margin: 10px 65px; line-height: 30px; }
+
+main .xianshi h2 { color: #ccc; border-bottom: 1px solid red; font-size: 20px; padding: 10px 0; }
+
+main .xianshi h2 span { color: red; }
+
+main .xianshi #xianlist { overflow: hidden; }
+
+main .xianshi #xianlist li { float: left; width: 270px; margin: 15px; }
+
+main .xianshi #xianlist li #xiand { background-color: #ccc; height: 20px; text-align: center; font-size: 16px; }
+
+main .xianshi #xianlist li #xiand span { color: red; }
+
+main .xianshi #xianlist li img { width: 265px; }
+
+main .xianshi #xianlist li P { font-weight: bold; }
+
+main .xianshi #xianlist li .xb { background-color: #FD1D5B; height: 50px; line-height: 50px; }
+
+main .xianshi #xianlist li .xb .pr { font-size: 30px; color: #fff; }
+
+main .xianshi #xianlist li .xb .btn { float: right; background-color: #F5EB10; width: 70px; height: 50px; color: #AE7D07; font-size: 20px; }
+
+main .tab #tabul { overflow: hidden; width: 1200px; margin: 0 auto; height: 500px; }
+
+main .tab #tabul li { width: 234px; height: 60px; float: left; margin-left: 5px; background-color: #F8F8F8; text-align: center; font-size: 20px; font-weight: bold; padding-top: 30px; }
+
+main .tab #tabul li:hover { border-bottom: 2px solid skyblue; }
+
+main .tab #tabul li .content { overflow: hidden; height: 500px; }
+
+main .tab #tabul li .content img { margin-top: -10px; padding-left: 20px; display: block; }
+
+main #pinpaihuodong { margin-top: -20px; }
+
+main #pinpaihuodong .pb { margin: 0 auto; width: 1200px; }
+
+main #pinpaihuodong .pb img { display: block; }
+
+main .hufu { overflow: hidden; height: 600px; }
+
+main .hufu .htop { border-bottom: 2px solid red; overflow: hidden; padding: 10px 0; }
+
+main .hufu .htop #htl { font-size: 25px; color: skyblue; float: left; }
+
+main .hufu .htop #htl span { color: red; font-weight: bold; }
+
+main .hufu .htop ul { float: right; }
+
+main .hufu .htop ul li { float: left; }
+
+main .hufu .htop ul li span { border-right: 1px solid #ccc; padding: 0 10px; }
+
+main .hufu .htop ul li:last-child span { border: none; }
+
+main .hufu .htop ul li:nth-child(2) span, main .hufu .htop ul li:nth-child(5) span { color: red; }
+
+main .hufu .hbl { float: left; }
+
+main .hufu .hbr { float: right; }
+
+main .hufu .hbr .fqtop { text-align: center; width: 220px; height: 42px; line-height: 40px; border-bottom: 2px solid red; font-size: 20px; color: red; }
+
+main .hufu .hbr .fq ul li { width: 220px; display: none; }
+
+main .hufu .hbr .fq ul li img { width: 200px; }
+
+main .hufu .hbr .fq ul li div { border: none; text-align: center; padding-bottom: 10px; }
+
+main .hufu .hbr .fq ul li div:first-child { height: 20px; overflow: hidden; }
+
+main .hufu .hbr .fq ul li div:first-child p { font-size: 16px; }
+
+main .hufu .hbr .fq ul li div span { font-size: 25px; color: red; text-align: center; width: 60px; margin-left: 50px; }
+
+main .hufu .hbr .fq ul div { height: 46px; line-height: 46px; font-size: 16px; border-bottom: 1px solid red; }
+
+main .hufu .hbr .fq ul div span { float: left; padding: 0 5px; font-size: 20px; color: red; }
