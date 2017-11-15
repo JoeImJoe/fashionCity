@@ -72,11 +72,11 @@
 
 #top3 { background-color: #100E0F; height: 40px; }
 
-#top3 .container { line-height: 40px; text-align: center; }
+#top3 .container { line-height: 40px; text-align: center; position: relative; padding-left: 230px; }
 
 #top3 .container .nano { overflow: hidden; }
 
-#top3 .container .nav1 { width: 230px; background-color: #03AFEC; height: 40px; float: left; }
+#top3 .container .nav1 { width: 230px; background-color: #03AFEC; height: 40px; float: left; position: absolute; left: 0; top: 0; z-index: 10; }
 
 #top3 .container .nav1 p { color: #fff; }
 

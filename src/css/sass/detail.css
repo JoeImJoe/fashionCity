@@ -1,0 +1,39 @@
+#detail { min-height: 1000px; width: 1000px; margin: 0 auto; }
+
+#detail .top { height: 35px; border-bottom: 2px solid skyblue; line-height: 30px; }
+
+#detail .top p { float: left; }
+
+#detail .top p span:nth-child(3) { color: skyblue; }
+
+#detail .del { float: left; width: 420px; height: 420px; }
+
+#detail .del ul { float: left; width: 75px; padding-top: 20px; }
+
+#detail .del ul li { background-color: pink; margin-bottom: 5px; height: 72px; overflow: hidden; }
+
+#detail .del ul li img { width: 72px; }
+
+#detail .del div img { width: 320px; float: right; margin-top: 60px; }
+
+#detail .der { float: right; width: 510px; height: 420px; }
+
+#detail .der ul li { height: 58px; border-bottom: 1px dashed #ccc; padding-top: 10px; box-sizing: border-box; line-height: 20px; }
+
+#detail .der ul li h3 { font-weight: bold; text-align: left; font-size: 18px; line-height: 30px; }
+
+#detail .der ul li:nth-child(2) { height: 103px; }
+
+#detail .der ul li:nth-child(2) span { color: red; padding: 0 10px; font-size: 16px; }
+
+#detail .der ul li:nth-child(3) { height: 155px; border: none; }
+
+#detail .der ul li:nth-child(4) { border: 1px solid #DE9687; border-radius: 5px; background-color: #FFFCF3; height: 74px; font-size: 16px; line-height: 40px; padding: 20px 0 0 50px; }
+
+#detail .der ul li:nth-child(4) div { float: left; padding-right: 20px; }
+
+#detail .der ul li:nth-child(4) div input { width: 20px; text-align: center; }
+
+#detail .der ul li:nth-child(4) div span { width: 15px; height: 15px; background-color: #ddd; display: inline-block; line-height: 15px; text-align: center; }
+
+#detail .der ul li:nth-child(4) .addto { width: 140px; height: 35px; background-color: #FFCD51; border-radius: 5px; font-weight: bold; text-align: center; line-height: 35px; color: #FFFCF3; }

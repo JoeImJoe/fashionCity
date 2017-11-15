@@ -1,0 +1,17 @@
+#goodslist { min-height: 1600px; }
+
+#goodslist ul { width: 1200px; float: right; overflow: hidden; }
+
+#goodslist ul li { width: 210px; height: 360px; float: left; background: #fff; margin-bottom: 20px; overflow: hidden; position: relative; padding: 30px 10px 0 10px; }
+
+#goodslist ul li .lt { margin-top: 20px; }
+
+#goodslist ul li .lt img { width: 180px; }
+
+#goodslist ul li .lt p { text-align: center; }
+
+#goodslist ul li .lt p span { color: red; margin-top: 10px; display: block; }
+
+#goodslist ul li .lb { position: absolute; left: 10px; bottom: 0; padding-top: 25px; color: red; font-size: 22px; }
+
+#goodslist ul li .lb .button { float: left; width: 90px; height: 30px; background: #FC1C5A; font-size: 14px; line-height: 30px; margin-top: 5px; font-weight: bold; color: #fff; text-align: center; }

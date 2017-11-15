@@ -1,0 +1,93 @@
+#detail{
+        min-height:1000px;
+         width: 1000px;margin: 0 auto;
+         .top{
+          height: 35px;
+          border-bottom:2px solid skyblue;
+          line-height: 30px;
+          p{float: left;
+            span:nth-child(3){
+                color:skyblue;
+          }
+          }
+          
+         }
+        .del{
+            float: left;width: 420px;height: 420px;
+            ul{
+                float: left;
+                width: 75px;
+                padding-top: 20px;
+                li{
+                    background-color: pink;
+                    margin-bottom: 5px;
+                    height: 72px;
+                    overflow: hidden;
+                    img{
+                        width: 72px;
+                    }
+                }
+            }
+            div{
+                img{
+                    width: 320px;float: right;margin-top: 60px;
+                }
+            }
+        }
+        .der{
+            float: right;
+            width: 510px;
+            height: 420px;
+            ul{
+                li{
+                    height: 58px;border-bottom:1px dashed #ccc;
+                    padding-top: 10px;box-sizing:border-box;
+                    line-height: 20px;
+                    h3{
+                        font-weight: bold;text-align: left;
+                        font-size: 18px;line-height: 30px;
+                    }
+                    &:nth-child(2){
+                            height: 103px;
+                            span{
+                                color:red;
+                                padding: 0 10px;font-size: 16px;
+                            }
+                    }
+                     &:nth-child(3){
+                            height: 155px;border:none;
+                     }
+                      &:nth-child(4){
+                            border:1px solid #DE9687;
+                            border-radius:5px;
+                            background-color: #FFFCF3;height: 74px;
+                            font-size: 16px;
+                            line-height: 40px;
+                            padding: 20px 0 0 50px;
+                            div{ 
+                                float: left;padding-right: 20px;
+                                input{
+                                    width: 20px;text-align: center;
+                                }
+                                span{
+                                    width: 15px;height: 15px;background-color: #ddd;display:inline-block;line-height: 15px;text-align: center;
+                                }
+                                    
+                            }
+                            .addto{
+                                width: 140px;
+                                height: 35px;
+                                background-color: #FFCD51;
+                                border-radius:5px;
+                                
+                                font-weight: bold;
+                                text-align: center;
+                                line-height: 35px;
+                                color: #FFFCF3;
+                            }
+                                }
+                      }
+                }
+            }
+      
+}

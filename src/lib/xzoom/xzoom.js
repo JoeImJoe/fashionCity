@@ -118,8 +118,8 @@ XZoom.prototype = {
 			this.zoom.style.top = top + 'px';
 
 
-			bigImg.style.left = -left * this.ratio + 'px';
-			bigImg.style.top = -top * this.ratio + 'px';
+			bigImg.style.left = -(left-this.ele.offsetWidth/3) * this.ratio+ 'px';
+			bigImg.style.top = -(top-50) * this.ratio + 'px';
 		}
 
 	},
@@ -143,7 +143,6 @@ XZoom.prototype = {
 		// 计算大图与小图的比率
 		bigImg.onload = ()=>{
 			this.ratio = bigImg.offsetWidth/smallImg.offsetWidth;
-
 			// 定义放大镜尺寸
 			this.zoom.style.width = this.big.offsetWidth/this.ratio + 'px';
 			this.zoom.style.height = this.big.offsetHeight/this.ratio + 'px';

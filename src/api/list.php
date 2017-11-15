@@ -8,7 +8,7 @@
 	$sql = 'select * from goods';
 
 	if($cate){
-		$sql .= ' where category="' . $cate . '"';
+		$sql .= ' where pinpai="' . $cate . '"';
 	}
 
 	$sql .= ' limit '. $qty*($pageNo-1) . ',' . $qty;
