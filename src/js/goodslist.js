@@ -2,20 +2,15 @@
 * @Author: Marte
 * @Date:   2017-11-14 10:42:40
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-14 16:56:22
+* @Last Modified time: 2017-11-16 10:57:08
 */
-
-jQuery(function($){
-    $('header').load('../html/header.html',function(){
-         $('.nav1').hover(function(){
-                $(this).stop().animate({
-                            height:680
-                        }).removeClass('nano');
-                   },function(){
-                        $(this).stop().animate({
-                            height:40
-                    }).addClass('nano');
-           })
+require(['config'],function(){
+    require(['jquery','common','xheader'],function($){
+   
+         $('.nav2 li').eq(0).click(function(){
+                location.href = '../index.html';
+                
+            })
          $.ajax({
                     url:'../api/goodslist.php',
                     type:'GET',
@@ -42,7 +37,6 @@ jQuery(function($){
         $('#goodslist').on('click','img',function(){
             location.href='../html/detail.html?'+this.src.slice(25);
         })
-    })
-
-    $('footer').load('../html/footer.html',function(){});
+   
+})
 })

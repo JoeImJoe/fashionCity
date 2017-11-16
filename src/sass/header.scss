@@ -161,6 +161,20 @@
                             height: 1px;background-color: #FFF;width:172px;margin-top: -1px;float: right;
                             
                         }
+                       ul{
+                            li{  height: 50px;overflow:hidden;
+                                 img{
+                                    width: 40px;
+                                    margin: 10px;float: left;
+                                }
+                                span{
+                                    display:block;line-height: 50px;float: left;padding-left: 5px;
+                                    &:last-child{
+                                        color:red;
+                                    }
+                                }
+                       }
+                       }
                     }
                 }
             }

@@ -9,12 +9,14 @@ require.config({
 		xzoom:'../lib/xzoom/xzoom',
 		common:'common',
 		header:'header',
-		footer:'footer'
+		xheader:'xheader'
 	},
 
 	// 配置依赖
 	shim:{
 		xcarousel:['jquery'],
-		cookie:['jquery']
+		cookie:['jquery'],
+		header:['jquery','common'],
+		xheader:['jquery','common']
 	}
 });

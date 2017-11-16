@@ -70,6 +70,14 @@
 
 #top2 .container .t3 .t3r #car #line { height: 1px; background-color: #FFF; width: 172px; margin-top: -1px; float: right; }
 
+#top2 .container .t3 .t3r #car ul li { height: 50px; overflow: hidden; }
+
+#top2 .container .t3 .t3r #car ul li img { width: 40px; margin: 10px; float: left; }
+
+#top2 .container .t3 .t3r #car ul li span { display: block; line-height: 50px; float: left; padding-left: 5px; }
+
+#top2 .container .t3 .t3r #car ul li span:last-child { color: red; }
+
 #top3 { background-color: #100E0F; height: 40px; }
 
 #top3 .container { line-height: 40px; text-align: center; position: relative; padding-left: 230px; }

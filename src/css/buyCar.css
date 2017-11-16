@@ -1,0 +1,178 @@
+
+.containe{
+    width: 980px;
+    min-height: 108px;
+    border: 1px solid #D9D9D9;
+    margin: auto;
+    overflow: hidden;
+}
+.icon{
+    height: 78px;
+    border-bottom: 2px solid #404040;
+    line-height: 78px;
+    position: relative;
+}
+.icon img{
+    display: inline-block;
+    float: left;
+    margin: 18px 17px 0 17px;
+}
+.icon h2{
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: #333;
+    font-style: italic;
+}
+.icon p{
+    display: block;
+    float: left;
+    font-size: 10px;
+    color: #333;
+    line-height: 84px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+.icon .no_1 h2{
+    color: #FF4500;
+}
+.icon .no_1 p{
+    color: #FF4500;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    width: 100%;
+
+}
+#carTable .head{
+    height: 40px;
+    background: #F3F3F3;
+    line-height: 37px;padding: 0;
+
+}
+.head th:first-child{
+    text-align: left;
+    padding-left: 30px;
+    font-size: 20px;
+    color:#f60;
+}
+#carTable img{
+    width: 91px;
+    height: 81px;
+    float: left;
+    margin:0 30px;
+}
+#carTable tr{
+    height: 100px;
+    border-bottom: 1px solid #D9D9D9;
+
+}
+#carTable p{
+    font-size: 10px;
+}
+.goods{
+   
+    width: 542px;
+}
+
+.goods span{
+    font-size: 12px;
+    color: #0088CF;
+    font-weight: bold;
+}
+.count{
+    width: 60px;
+}
+.price{
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+}
+.count .add, .count input, .count .reduce{
+    float: left;
+    margin-right: -1px;
+    position: relative;
+    z-index: 0;
+}
+.count .add, .count .reduce{
+    height: 18px;
+    width: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 18px;
+    background: #F9F9F9;
+}
+.count .add:hover, .count .reduce:hover{
+    color: #f50;
+    z-index: 3;
+    border-color: #f60;
+    cursor: pointer;
+}
+.count input{
+    width: 28px;
+    height: 18px;
+    border: 1px solid #ccc;
+    text-align: center;
+    z-index: 2;
+    line-height: 18px;
+}
+.price span:first-child{
+    text-decoration: line-through;
+}
+.price span:last-child{
+    color: red;
+    font-weight: bold;
+}
+.subtotal{
+    width: 160px;
+    font-size: 12px;
+    text-align: center;
+
+}
+.subtotal span:last-child{
+    color: green;
+}
+.operation span:hover, a:hover{
+    cursor:pointer;
+    color: red;
+    
+}
+.delete button{
+    width: 16px;
+    height: 16px;
+    text-align:right;
+}
+.foot{
+    height: 120px;text-align: right;
+}
+
+
+
+.total{
+    font-size: 10px;
+}
+.checkout{
+    background-color: skyblue;
+    width: 200px;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 15px;
+    color:#f60;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+
