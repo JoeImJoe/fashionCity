@@ -1,4 +1,4 @@
-#detail { min-height: 1000px; width: 1000px; margin: 0 auto; }
+#detail { min-height: 200px; width: 1000px; margin: 0 auto; }
 
 #detail .top { height: 35px; border-bottom: 2px solid skyblue; line-height: 30px; }
 
@@ -37,3 +37,7 @@
 #detail .der ul li:nth-child(4) div span { width: 15px; height: 15px; background-color: #ddd; display: inline-block; line-height: 15px; text-align: center; }
 
 #detail .der ul li:nth-child(4) .addto { width: 140px; height: 35px; background-color: #FFCD51; border-radius: 5px; font-weight: bold; text-align: center; line-height: 35px; color: #FFFCF3; }
+
+#jia { width: 1600px; margin: 200px auto; }
+
+#jia img { float: left; }

@@ -1,6 +1,6 @@
 #goodslist { min-height: 1600px; }
 
-#goodslist ul { width: 1200px; float: right; overflow: hidden; }
+#goodslist ul { width: 1200px; float: right; min-height: 1600px; overflow: hidden; }
 
 #goodslist ul li { width: 210px; height: 360px; float: left; background: #fff; margin-bottom: 20px; overflow: hidden; position: relative; padding: 30px 10px 0 10px; }
 

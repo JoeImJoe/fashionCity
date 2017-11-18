@@ -7,7 +7,7 @@
 	// 密码md5加密
 	$password = md5($password);
 
-	$sql = "select * from user where username='$username' and password='$password'";
+	$sql = "select * from user where name='$username' and passwprd='$password'";
 
 
 	// 获取查询结果

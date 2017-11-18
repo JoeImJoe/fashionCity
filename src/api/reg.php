@@ -1,20 +1,20 @@
 <?php
 	include 'connect.php';
 	
-	// $username = isset($_GET['username']) ? $_GET['username'] : '';
+	$username = isset($_GET['name']) ? $_GET['name'] : '';
 	// $email = isset($_GET['email']) ? $_GET['email'] : '';
 	// $grade = isset($_GET['grade']) ? $_GET['grade'] : '';
 	// $gender = isset($_GET['gender']) ? $_GET['gender'] : '';
 	// $birthday = isset($_GET['birthday']) ? $_GET['birthday'] : '';
-	$phone = isset($_GET['phone']) ? $_GET['phone'] : '';
-	$password = isset($_GET['password']) ? $_GET['password'] : '123456';
+	$email = isset($_GET['email']) ? $_GET['email'] : '';
+	$password = isset($_GET['password']) ? $_GET['password'] : '';
 
 	//查看用户名是否已经存在
-	$sql = "select username from user where username='$username'";
+	$sql = 'select name from user where name="'.$username.'"';
 	$result = $conn->query($sql);
 	if($result->num_rows>0){
-		echo "fail";
-	}else{
+		echo "no";
+	}else if($password){
 		// 密码md5加密
 		$password = md5($password);
 
@@ -26,7 +26,7 @@
 		 */
 		// $password = password_hash($password,PASSWORD_DEFAULT);
 
-		$sql = "insert into user (phone,password) values('$phone','$password')";
+		$sql = "insert into user (name,passwprd,email) values('".$username."','".$password."','".$email."')";
 
 
 		// 获取查询结果
@@ -42,8 +42,8 @@
 	
 	
 
-	// 释放查询内存(销毁)
-	//$result->free();
+	//释放查询内存(销毁)
+	$result->free();
 
 	//关闭连接
 	$conn->close();

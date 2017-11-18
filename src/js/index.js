@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-11 15:19:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-16 10:49:25
+* @Last Modified time: 2017-11-17 11:54:45
 */
 require(['config'],function(){
     require(['jquery','common','xcarousel','header'],function($){
@@ -125,6 +125,11 @@ require(['config'],function(){
                         $(this).css({display:'none'}).prev().css({display:'block'});
                     });
 
-      
+      $('.blue').on('click','li',function(){
+            location.href='html/detail.html?'+$(this).find('img')[0].src.slice(25);
+      })
+      $('#xianlist').on('click','li',function(){
+            location.href='html/detail.html?'+$(this).find('img')[0].src.slice(25);
+      })
 })
 })

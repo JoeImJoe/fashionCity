@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-10 20:13:41
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-16 19:52:08
+* @Last Modified time: 2017-11-17 15:08:39
 */
 
 jQuery(function($){
@@ -19,7 +19,7 @@ jQuery(function($){
                         height:40
                     }).addClass('nano');
                });
-             $('#top3').on('click','span',function(){
+             $('#top3').on('click','.abs',function(){
 
                 location.href = 'goodslist.html?span='+this.innerText;   
              })
@@ -39,7 +39,7 @@ jQuery(function($){
                         return`<li>
                             <img src='../${item.img}'>
                             <span>${item.itro.slice(0,15)}&times;${item.qty}</span>
-                            <span>￥${item.price}</span>
+                            <span>￥${item.price*item.qty}</span>
                             <span class="remove">删除</span>
                         </li>
                         `
@@ -67,7 +67,12 @@ jQuery(function($){
                     })
              })
             
-
+             $('.t3r').on('click','.ro',function(){
+                location.href='../html/buyCar.html';
+             })
+             $('.tl a').click(function(){
+                location.href='login.html';
+             })
     })
      $('footer').load('footer.html',function(){});
   

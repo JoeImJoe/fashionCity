@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-14 10:42:40
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-16 20:36:36
+* @Last Modified time: 2017-11-18 16:24:39
 */
 require(['config'],function(){
     require(['jquery','common','xheader','xzoom'],function($){
@@ -13,7 +13,12 @@ require(['config'],function(){
                             
                         })
                      var parmas = location.search.slice(1);
-                     var coo=[];
+                     if(!Cookie.get('data')){
+                        var coo=[];
+                    }else{
+                        var coo=JSON.parse(Cookie.get('data'));
+                    }
+                     
                      $.ajax({
                                 url:'../api/goods.php',
                                 type:'GET',
@@ -77,15 +82,17 @@ require(['config'],function(){
                                                 </ul>
                                             </div>`
                                         }).join('');
+
                                       $('#detail')[0].appendChild(ul);
                                        $('.del').on('mouseover','img',function(){
                                             $('.deimg img')[0].src=$(this)[0].src;
-                                             xZoom({width:460,
+                                             xZoom({    width:460,
                                                         height:460,
                                                         position:'right',
                                                         gap:100,
                                                         ele:'.deimg'
                                                     });
+
                                         })
                                        var ipu=$('#detail input')[0].value;
                                        $('.pre').click(function(){
@@ -125,21 +132,28 @@ require(['config'],function(){
                                                 })
                                              if(Cookie.get('data')){
                                                 var cookies=JSON.parse(Cookie.get('data'));
-                                               coo=[];
-                                                cookies.map(function(item){
+                                               var cook=[];
+                                                cookies.map(function(item,i){
 
                                                     if(item.id == idx){
-                                                       
+                                                        coo.splice(i,1);
                                                         item.qty=$('#detail input')[0].value*1+item.qty*1;
                                                        
-                                                       coo.push({itro:item.itro,price:item.price,id:item.id,qty:item.qty,img:img});
+                                                       cook.push({itro:item.itro,price:item.price,id:item.id,qty:item.qty,img:img});
                                                        
                                                     }else{
-                                                         coo.push({itro:itro,price:price,id:idx,qty:$('#detail input')[0].value,img:img});
+                                                         cook.push({itro:itro,price:price,id:idx,qty:$('#detail input')[0].value,img:img});
                                                          
                                                      }
+
                                                       
-                                                })
+                                                }) 
+                                                if(cook.length>1){
+                                                    var a=cook[cook.length-1];
+                                                    cook=[];
+                                                    cook.push(a);   
+                                                }
+                                                coo=coo.concat(cook);
                                              }else{
                                                  coo.push({itro:itro,price:price,id:idx,qty:$('#detail input')[0].value,img:img}); 
                                                   

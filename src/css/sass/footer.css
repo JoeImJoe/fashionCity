@@ -1,4 +1,6 @@
-footer .ft { border: 1px solid #ccc; background-color: #FBFBFB; height: 200px; }
+footer { float: left; }
+
+footer .ft { border: 1px solid #ccc; padding: 0 200px 0 200px; background-color: #FBFBFB; height: 200px; }
 
 footer .ft .container .fl1 { width: 200px; float: left; }
 

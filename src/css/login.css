@@ -1,0 +1,28 @@
+
+
+/*main部分 -start-*/
+#y_zhuce .w{min-height:500px; width: 1200px;border:2px solid skyblue;padding-left: 120px;margin:50px auto;}
+#y_zhuce #y_a{width:445px;/*background:blue;*/padding-left:30px;padding-top:45px;}
+#y_zhuce #y_a p{font-weight: bold;font-size:14px;line-height: 24px;}
+#y_zhuce #y_a input{width: 343px;height: 35px;border:1px solid #ccc;border-bottom:2px solid #ccc;margin-bottom: 18px;}
+/*#y_zhuce #y_a span{display: block;width: 70px;height: 35px;background: #ccc;margin-bottom: 18px;margin-top:-10px;}*/
+#y_zhuce #y_a button{width: 70px;height: 35px;background: skyblue;font-weight: bold;color:white;}
+/*-----------------------------------------*/
+#y_zhuce #y_b{width:6px;/*background: yellow;*/}
+/*---------------------------------------*/
+#y_zhuce #y_c{width:523px;/*background:red;*/padding-left:67px;padding-top:26px;}
+#y_zhuce #y_c #c_1{width: 344px;height: 43px;margin-bottom: 15px;}
+#y_zhuce #y_c p{font-weight: bold;font-size:14px;line-height: 24px;margin-top:15px;}
+#y_zhuce #y_c #c_2{margin-top:0;color:#ccc;}
+#y_zhuce #y_c input{width: 343px;height: 35px;border:1px solid #ccc;border-bottom:2px solid #ccc;}
+#y_zhuce #y_c #y_checkbox{width:15px;height:15px;}
+#y_zhuce #y_c #c-4{margin-top:0;color:#ccc;padding-left:15px;}
+#y_zhuce #y_c a{color:blue;text-decoration:underline;}
+#y_zhuce #y_c button{width: 70px;height: 35px;background: skyblue;font-weight: bold;color:white;margin-top:20px;}
+
+/*-----------------------------------------*/
+#y_zhuce #y_d{width:58px;
+position:fixed;
+right:280px;top:140px;/*background:yellow;*/}
+/*文本样式提取*/
+
